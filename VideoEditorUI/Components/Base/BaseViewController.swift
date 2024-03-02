@@ -1,0 +1,24 @@
+// MARK: - Imports
+
+import UIKit
+
+// MARK: - BaseViewController
+
+open class BaseViewController: UIViewController {
+
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .init(hex: 0x030303)
+    }
+    
+}
+
+// MARK: - Configure Methods
+
+private extension BaseViewController {
+    
+    func addSubviews(from views: [UIView], to parentView: UIView) {
+        views.forEach({parentView.addSubview($0)})
+    }
+    
+}

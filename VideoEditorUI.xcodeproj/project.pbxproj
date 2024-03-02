@@ -56,6 +56,7 @@
 		575572DB2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D92B90AF980019ECB0 /* SubscriptionButton.swift */; };
 		575572DD2B90DCF40019ECB0 /* SystemButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572DC2B90DCF40019ECB0 /* SystemButtons.swift */; };
 		575572DE2B90DCF40019ECB0 /* SystemButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572DC2B90DCF40019ECB0 /* SystemButtons.swift */; };
+		57A5817D2B93497000756C78 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5817C2B93497000756C78 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		575572D72B8D1B3E0019ECB0 /* UIButton+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ Extension.swift"; sourceTree = "<group>"; };
 		575572D92B90AF980019ECB0 /* SubscriptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionButton.swift; sourceTree = "<group>"; };
 		575572DC2B90DCF40019ECB0 /* SystemButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemButtons.swift; sourceTree = "<group>"; };
+		57A5817C2B93497000756C78 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		575572CB2B8CDCE90019ECB0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				57A5817B2B93495200756C78 /* Base */,
 				575572CC2B8CDCF60019ECB0 /* Buttons */,
 			);
 			path = Components;
@@ -196,6 +199,14 @@
 				575572DC2B90DCF40019ECB0 /* SystemButtons.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		57A5817B2B93495200756C78 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				57A5817C2B93497000756C78 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 			files = (
 				575572DA2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */,
 				575572C32B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift in Sources */,
+				57A5817D2B93497000756C78 /* BaseViewController.swift in Sources */,
 				575572DD2B90DCF40019ECB0 /* SystemButtons.swift in Sources */,
 				575572D82B8D1B3E0019ECB0 /* UIButton+ Extension.swift in Sources */,
 				575572D02B8D04640019ECB0 /* SocialButton.swift in Sources */,
