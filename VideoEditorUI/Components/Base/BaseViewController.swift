@@ -11,14 +11,9 @@ open class BaseViewController: UIViewController {
         view.backgroundColor = .init(hex: 0x030303)
     }
     
-}
-
-// MARK: - Configure Methods
-
-private extension BaseViewController {
-    
     func addSubviews(from views: [UIView], to parentView: UIView) {
-        views.forEach({parentView.addSubview($0)})
-    }
+       views.forEach({parentView.addSubview($0)})
+   }
     
 }
+
