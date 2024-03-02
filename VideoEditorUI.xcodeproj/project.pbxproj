@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		575572992B8BC2C30019ECB0 /* VideoEditorFramework */ = {
+		57A5817E2B939B9C00756C78 /* VideoUIFramework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5755729A2B8BC2C30019ECB0 /* Build configuration list for PBXAggregateTarget "VideoEditorFramework" */;
+			buildConfigurationList = 57A5817F2B939B9C00756C78 /* Build configuration list for PBXAggregateTarget "VideoUIFramework" */;
 			buildPhases = (
-				5755729D2B8BC3030019ECB0 /* ShellScript */,
+				57A581822B939BC700756C78 /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = VideoEditorFramework;
-			productName = VideoEditorFramework;
+			name = VideoUIFramework;
+			productName = VideoUIFramework;
 		};
 /* End PBXAggregateTarget section */
 
@@ -275,7 +275,7 @@
 					575572882B8BBFB50019ECB0 = {
 						CreatedOnToolsVersion = 15.2;
 					};
-					575572992B8BC2C30019ECB0 = {
+					57A5817E2B939B9C00756C78 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -295,7 +295,7 @@
 			targets = (
 				5755727E2B8BBFB50019ECB0 /* VideoEditorUI */,
 				575572882B8BBFB50019ECB0 /* VideoEditorUITests */,
-				575572992B8BC2C30019ECB0 /* VideoEditorFramework */,
+				57A5817E2B939B9C00756C78 /* VideoUIFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -335,7 +335,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5755729D2B8BC3030019ECB0 /* ShellScript */ = {
+		57A581822B939BC700756C78 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \"project\"\n# 1) Открываем \"${PROJECT_DIR}\"\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: Detected, stopping\"\nelse\nexport ALREADYINVOKED=\"true\"\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-iosuniversal\n\n# 2) Переходим (либо создаем) папку с выходными файлами\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# 3) Билдим для устройства и симулятора\necho \"iphone\"\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\necho \"iphonesim\"\nxcodebuild -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\n# 4) Копируем из папки Debug-iphoneos в папку universal\necho \"universal\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# 5) Копируем swift modules\necho \"iphone simulator path\"\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# 6) С помощью lipo создаем universal framework\necho \"lipo create\"\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\necho \"end\"\nfi\n";
+			shellScript = "echo \"project\"\n# 1) Открываем \"${PROJECT_DIR}\"\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: Detected, stopping\"\nelse\nexport ALREADYINVOKED=\"true\"\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-iosuniversal\n\n# 2) Переходим (либо создаем) папку с выходными файлами\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# 3) Билдим для устройства и симулятора\necho \"iphone\"\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\necho \"iphonesim\"\nxcodebuild -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\n# 4) Копируем из папки Debug-iphoneos в папку universal\necho \"universal\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# 5) Копируем swift modules\necho \"iphone simulator path\"\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# 6) С помощью lipo создаем universal framework\necho \"lipo create\"\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\necho \"end\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -628,7 +628,7 @@
 			};
 			name = Release;
 		};
-		5755729B2B8BC2C30019ECB0 /* Debug */ = {
+		57A581802B939B9C00756C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -637,7 +637,7 @@
 			};
 			name = Debug;
 		};
-		5755729C2B8BC2C30019ECB0 /* Release */ = {
+		57A581812B939B9C00756C78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -676,11 +676,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5755729A2B8BC2C30019ECB0 /* Build configuration list for PBXAggregateTarget "VideoEditorFramework" */ = {
+		57A5817F2B939B9C00756C78 /* Build configuration list for PBXAggregateTarget "VideoUIFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5755729B2B8BC2C30019ECB0 /* Debug */,
-				5755729C2B8BC2C30019ECB0 /* Release */,
+				57A581802B939B9C00756C78 /* Debug */,
+				57A581812B939B9C00756C78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
