@@ -6,11 +6,56 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		575572992B8BC2C30019ECB0 /* VideoEditorFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5755729A2B8BC2C30019ECB0 /* Build configuration list for PBXAggregateTarget "VideoEditorFramework" */;
+			buildPhases = (
+				5755729D2B8BC3030019ECB0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = VideoEditorFramework;
+			productName = VideoEditorFramework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		575572842B8BBFB50019ECB0 /* VideoEditorUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 575572832B8BBFB50019ECB0 /* VideoEditorUI.docc */; };
 		5755728A2B8BBFB50019ECB0 /* VideoEditorUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5755727F2B8BBFB50019ECB0 /* VideoEditorUI.framework */; };
 		5755728F2B8BBFB50019ECB0 /* VideoEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755728E2B8BBFB50019ECB0 /* VideoEditorUITests.swift */; };
 		575572902B8BBFB50019ECB0 /* VideoEditorUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 575572822B8BBFB50019ECB0 /* VideoEditorUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		575572A52B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572A42B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf */; };
+		575572A62B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572A42B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf */; };
+		575572A82B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572A72B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf */; };
+		575572A92B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572A72B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf */; };
+		575572AB2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572AA2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf */; };
+		575572AC2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572AA2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf */; };
+		575572AE2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572AD2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf */; };
+		575572AF2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572AD2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf */; };
+		575572B12B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B02B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf */; };
+		575572B22B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B02B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf */; };
+		575572B42B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B32B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf */; };
+		575572B52B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B32B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf */; };
+		575572B72B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B62B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf */; };
+		575572B82B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B62B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf */; };
+		575572BA2B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B92B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf */; };
+		575572BB2B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 575572B92B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf */; };
+		575572BD2B8BC8FA0019ECB0 /* UILabel+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572BC2B8BC8FA0019ECB0 /* UILabel+ Extension.swift */; };
+		575572BE2B8BC8FA0019ECB0 /* UILabel+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572BC2B8BC8FA0019ECB0 /* UILabel+ Extension.swift */; };
+		575572C02B8BE7020019ECB0 /* UIColor+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572BF2B8BE7020019ECB0 /* UIColor+ Extension.swift */; };
+		575572C12B8BE7020019ECB0 /* UIColor+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572BF2B8BE7020019ECB0 /* UIColor+ Extension.swift */; };
+		575572C32B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572C22B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift */; };
+		575572C42B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572C22B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift */; };
+		575572D02B8D04640019ECB0 /* SocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572CF2B8D04640019ECB0 /* SocialButton.swift */; };
+		575572D22B8D122D0019ECB0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575572D12B8D122D0019ECB0 /* Media.xcassets */; };
+		575572D42B8D13CA0019ECB0 /* UIImage+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D32B8D13CA0019ECB0 /* UIImage+ Extension.swift */; };
+		575572D62B8D18140019ECB0 /* UIFont+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D52B8D18140019ECB0 /* UIFont+ Extension.swift */; };
+		575572D82B8D1B3E0019ECB0 /* UIButton+ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D72B8D1B3E0019ECB0 /* UIButton+ Extension.swift */; };
+		575572DA2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D92B90AF980019ECB0 /* SubscriptionButton.swift */; };
+		575572DB2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572D92B90AF980019ECB0 /* SubscriptionButton.swift */; };
+		575572DD2B90DCF40019ECB0 /* SystemButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572DC2B90DCF40019ECB0 /* SystemButtons.swift */; };
+		575572DE2B90DCF40019ECB0 /* SystemButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575572DC2B90DCF40019ECB0 /* SystemButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +74,24 @@
 		575572832B8BBFB50019ECB0 /* VideoEditorUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VideoEditorUI.docc; sourceTree = "<group>"; };
 		575572892B8BBFB50019ECB0 /* VideoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5755728E2B8BBFB50019ECB0 /* VideoEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorUITests.swift; sourceTree = "<group>"; };
+		575572A42B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		575572A72B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		575572AA2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		575572AD2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Italic.ttf"; sourceTree = "<group>"; };
+		575572B02B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Light.ttf"; sourceTree = "<group>"; };
+		575572B32B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		575572B62B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		575572B92B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		575572BC2B8BC8FA0019ECB0 /* UILabel+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+ Extension.swift"; sourceTree = "<group>"; };
+		575572BF2B8BE7020019ECB0 /* UIColor+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ Extension.swift"; sourceTree = "<group>"; };
+		575572C22B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ Extension.swift"; sourceTree = "<group>"; };
+		575572CF2B8D04640019ECB0 /* SocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButton.swift; sourceTree = "<group>"; };
+		575572D12B8D122D0019ECB0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		575572D32B8D13CA0019ECB0 /* UIImage+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ Extension.swift"; sourceTree = "<group>"; };
+		575572D52B8D18140019ECB0 /* UIFont+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+ Extension.swift"; sourceTree = "<group>"; };
+		575572D72B8D1B3E0019ECB0 /* UIButton+ Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ Extension.swift"; sourceTree = "<group>"; };
+		575572D92B90AF980019ECB0 /* SubscriptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionButton.swift; sourceTree = "<group>"; };
+		575572DC2B90DCF40019ECB0 /* SystemButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +134,12 @@
 		575572812B8BBFB50019ECB0 /* VideoEditorUI */ = {
 			isa = PBXGroup;
 			children = (
+				575572CB2B8CDCE90019ECB0 /* Components */,
+				575572A32B8BC7020019ECB0 /* Extensions */,
+				5755729E2B8BC66F0019ECB0 /* Fonts */,
 				575572822B8BBFB50019ECB0 /* VideoEditorUI.h */,
 				575572832B8BBFB50019ECB0 /* VideoEditorUI.docc */,
+				575572D12B8D122D0019ECB0 /* Media.xcassets */,
 			);
 			path = VideoEditorUI;
 			sourceTree = "<group>";
@@ -83,6 +150,52 @@
 				5755728E2B8BBFB50019ECB0 /* VideoEditorUITests.swift */,
 			);
 			path = VideoEditorUITests;
+			sourceTree = "<group>";
+		};
+		5755729E2B8BC66F0019ECB0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				575572AA2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf */,
+				575572AD2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf */,
+				575572B62B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf */,
+				575572B02B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf */,
+				575572B32B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf */,
+				575572B92B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf */,
+				575572A42B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf */,
+				575572A72B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		575572A32B8BC7020019ECB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				575572BC2B8BC8FA0019ECB0 /* UILabel+ Extension.swift */,
+				575572BF2B8BE7020019ECB0 /* UIColor+ Extension.swift */,
+				575572C22B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift */,
+				575572D32B8D13CA0019ECB0 /* UIImage+ Extension.swift */,
+				575572D52B8D18140019ECB0 /* UIFont+ Extension.swift */,
+				575572D72B8D1B3E0019ECB0 /* UIButton+ Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		575572CB2B8CDCE90019ECB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				575572CC2B8CDCF60019ECB0 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		575572CC2B8CDCF60019ECB0 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				575572CF2B8D04640019ECB0 /* SocialButton.swift */,
+				575572D92B90AF980019ECB0 /* SubscriptionButton.swift */,
+				575572DC2B90DCF40019ECB0 /* SystemButtons.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +264,9 @@
 					575572882B8BBFB50019ECB0 = {
 						CreatedOnToolsVersion = 15.2;
 					};
+					575572992B8BC2C30019ECB0 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = 575572792B8BBFB50019ECB0 /* Build configuration list for PBXProject "VideoEditorUI" */;
@@ -168,6 +284,7 @@
 			targets = (
 				5755727E2B8BBFB50019ECB0 /* VideoEditorUI */,
 				575572882B8BBFB50019ECB0 /* VideoEditorUITests */,
+				575572992B8BC2C30019ECB0 /* VideoEditorFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +294,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575572AE2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf in Resources */,
+				575572B72B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf in Resources */,
+				575572B42B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf in Resources */,
+				575572BA2B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				575572A82B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf in Resources */,
+				575572AB2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf in Resources */,
+				575572B12B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf in Resources */,
+				575572D22B8D122D0019ECB0 /* Media.xcassets in Resources */,
+				575572A52B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,17 +310,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575572AF2B8BC83B0019ECB0 /* PlusJakartaSans-Italic.ttf in Resources */,
+				575572B82B8BC85C0019ECB0 /* PlusJakartaSans-Regular.ttf in Resources */,
+				575572B52B8BC8500019ECB0 /* PlusJakartaSans-Medium.ttf in Resources */,
+				575572BB2B8BC8690019ECB0 /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				575572A92B8BC8210019ECB0 /* PlusJakartaSans-ExtraBold.ttf in Resources */,
+				575572AC2B8BC82F0019ECB0 /* PlusJakartaSans-ExtraLight.ttf in Resources */,
+				575572B22B8BC8450019ECB0 /* PlusJakartaSans-Light.ttf in Resources */,
+				575572A62B8BC8130019ECB0 /* PlusJakartaSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5755729D2B8BC3030019ECB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \"project\"\n# 1) Открываем \"${PROJECT_DIR}\"\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: Detected, stopping\"\nelse\nexport ALREADYINVOKED=\"true\"\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-iosuniversal\n\n# 2) Переходим (либо создаем) папку с выходными файлами\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# 3) Билдим для устройства и симулятора\necho \"iphone\"\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\necho \"iphonesim\"\nxcodebuild -target \"${TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" build\n\n# 4) Копируем из папки Debug-iphoneos в папку universal\necho \"universal\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# 5) Копируем swift modules\necho \"iphone simulator path\"\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# 6) С помощью lipo создаем universal framework\necho \"lipo create\"\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\necho \"end\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5755727B2B8BBFB50019ECB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575572DA2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */,
+				575572C32B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift in Sources */,
+				575572DD2B90DCF40019ECB0 /* SystemButtons.swift in Sources */,
+				575572D82B8D1B3E0019ECB0 /* UIButton+ Extension.swift in Sources */,
+				575572D02B8D04640019ECB0 /* SocialButton.swift in Sources */,
 				575572842B8BBFB50019ECB0 /* VideoEditorUI.docc in Sources */,
+				575572D42B8D13CA0019ECB0 /* UIImage+ Extension.swift in Sources */,
+				575572C02B8BE7020019ECB0 /* UIColor+ Extension.swift in Sources */,
+				575572BD2B8BC8FA0019ECB0 /* UILabel+ Extension.swift in Sources */,
+				575572D62B8D18140019ECB0 /* UIFont+ Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575572DB2B90AF980019ECB0 /* SubscriptionButton.swift in Sources */,
+				575572C42B8BF12D0019ECB0 /* CAGradientLayer+ Extension.swift in Sources */,
 				5755728F2B8BBFB50019ECB0 /* VideoEditorUITests.swift in Sources */,
+				575572C12B8BE7020019ECB0 /* UIColor+ Extension.swift in Sources */,
+				575572DE2B90DCF40019ECB0 /* SystemButtons.swift in Sources */,
+				575572BE2B8BC8FA0019ECB0 /* UILabel+ Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -330,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -356,6 +524,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,9 +536,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanBiriukov.VideoEditorUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,6 +560,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,15 +572,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.IvanBiriukov.VideoEditorUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		575572972B8BBFB50019ECB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RR26756PN;
@@ -423,6 +602,7 @@
 		575572982B8BBFB50019ECB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RR26756PN;
@@ -433,6 +613,24 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5755729B2B8BC2C30019ECB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RR26756PN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5755729C2B8BC2C30019ECB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RR26756PN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -462,6 +660,15 @@
 			buildConfigurations = (
 				575572972B8BBFB50019ECB0 /* Debug */,
 				575572982B8BBFB50019ECB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5755729A2B8BC2C30019ECB0 /* Build configuration list for PBXAggregateTarget "VideoEditorFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5755729B2B8BC2C30019ECB0 /* Debug */,
+				5755729C2B8BC2C30019ECB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
